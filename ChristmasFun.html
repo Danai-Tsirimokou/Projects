@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <style>
+        body, html {
+          height: 100%;
+          margin: 0;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        * {
+          box-sizing: border-box;
+        }
+        
+        body{
+          min-height: 100vh;
+          display: flex;
+          flex-direction: column;
+        }
+        
+        
+        .button {
+          border: none;
+          color: whitesmoke;
+          padding: 16px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          transition-duration: 0.4s;
+          cursor: pointer;
+        }
+        
+        .button1 {
+          background-color: rgba(255, 255, 255, 0);
+          color: rgb(255, 255, 255);
+          border: 2px solid #ffffff;
+        }
+        
+        .button1:hover {
+          background-color: rgba(17, 207, 150, 0.81);
+          color: white;
+        }
+        
+        .bg-text {
+          background-color: rgb(0,0,0); /* Fallback color */
+          background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+          color: whitesmoke;
+          font-weight: bold;
+          border: 3px solid #f1f1f1;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          z-index: 2;
+          width: 80%;
+          padding: 20px;
+          text-align: center;
+        }
+        
+        .logo-image{
+          width: 46px;
+          height: 46px;
+          border-radius: 50%;
+          overflow: hidden;
+          margin-top: -6px;
+        }
+        
+        .my-grad-bg{
+          font-family: sans-serif;
+          text-align: center;
+          padding: 10px 10px 0px 10px;
+          background-image: linear-gradient(90deg, rgb(105, 0, 0) 0%, rgb(186, 33, 33) 70%, rgb(248, 239, 202) 100%);
+          margin-top: auto;
+          position:fixed;
+          height: auto;
+          width: 100%;
+          padding: 5px;
+        }
+        
+        
+        
+        tr {
+          height: 45px;
+        }
+        
+        th, td {
+          color: rgb(42, 42, 42);
+        }
+        
+        .footer-grad {
+        background: linear-gradient(90deg, rgb(105, 0, 0) 0%, rgb(46, 17, 17) 100%, rgb(105, 0, 0) 100%);
+        color: rgb(157,157,157);
+        
+        }
+        
+        footer {
+          font-family: sans-serif;
+          text-align: center;
+          padding: 10px 10px 0px 10px;
+          background-color: rgb(129, 21, 21);
+          margin-top: auto;
+          position:fixed;
+          bottom: 0;
+          height: auto;
+          width: 100%;
+        }
+        
+        .navbar-right {
+          padding: 35px;
+        }
+        
+        .custom-button {
+          /*color: rgba(243, 208, 13, 0.858);*/
+          background-color: rgba(235, 197, 6, 0.867);
+        }
+        
+        .custom-button:hover {
+          /*color: rgb(47, 30, 20);*/
+          background-color: rgba(48, 14, 14, 0.916);
+        }
+
+        .table-cell1 {
+        background-color: rgb(246, 236, 202);
+        }
+        
+        .table-cell2 {
+          background-color: rgba(210, 9, 9, 0.874);
+        }
+        
+        .table-cell3 {
+          background-color: rgba(7, 195, 67, 0.848);
+        }
+        
+        table, th, td {
+          margin-left: auto;
+          margin-right: auto;
+          width: 80%;
+          text-align: center;
+          padding: 10px 20px 20px 20px;
+          border: 2px solid black;
+          border-collapse: collapse;
+        }
+      </style>
+      <link rel="shortcut icon" href="santa.ico"/>
+      <title>X-Mas Present</title>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top my-grad-bg">
+            <div class="navbar-header">
+              <div class="col-4 logo-image" style="float:left">
+                <img src="santa.ico" alt="" height=36 class="img-fluid">
+              </div>
+              <a class="navbar-brand" href="https://www.google.com/search?q=christmas&hl=en&sxsrf=ALiCzsbnkf3oMGfrFDkh3blNeejiBFQiaQ%3A1671820147349&source=hp&ei=c_OlY-OvDpiXxc8P4KeA6AM&iflsig=AJiK0e8AAAAAY6YBg2Wz7SyPnJY84ddUp2WKW7R6wt-9&oq=&gs_lcp=Cgdnd3Mtd2l6EAEYADIHCCMQ6gIQJzIHCCMQ6gIQJzIHCCMQ6gIQJzIHCCMQ6gIQJzIHCCMQ6gIQJzIHCCMQ6gIQJzIHCCMQ6gIQJzIHCCMQ6gIQJzIHCCMQ6gIQJzIHCCMQ6gIQJ1AAWABg3wVoAXAAeACAAQCIAQCSAQCYAQCwAQo&sclient=gws-wiz">
+                <p style="color: black;">It's Christmas Time</p>
+              </a>
+            </div>
+        </nav>
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <div>
+          <h1>Best Games to have fun on Christmas</h1>
+          <h1 style="font-family: Brush Script MT , cursive;">Merry Christmas</h1>
+        </div>
+
+        <div class="table-responsive">
+            <table class="table">
+                <tr class="table-cell1">
+                    <th><h2>Google Santa Tracker</h2>
+                        <p>Google Santa Tracker is an annual Christmas-themed entertainment website first launched in 2004 by Google that simulates the tracking of the legendary character Santa Claus on Christmas Eve, using predetermined location information.</p>
+                    </th>
+                    <td>
+                        <div class="row">
+                            <div class="col-xs-12 col-md-12 col-sm-12">
+                              <br>
+                                <a href="https://santatracker.google.com/intl/en/"><button class="button custom-button">Let's track Santa</button></a>
+                              <br>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="table-cell2">
+                    <th><h2>Pac-Man</h2>
+                        <p>Pac-Man, originally called Puck Man in Japan, is a 1980 maze action video game developed and released by Namco for arcades. In North America, the game was released by Midway Manufacturing as part of its licensing agreement with Namco America.</p>
+                    </th>
+                    <td>
+                        <div class="row">
+                            <div class="col-xs-12 col-md-12 col-sm-12">
+                              <br>
+                                <a href="https://www.google.com/logos/2010/pacman10-i.html"><button class="button custom-button">Let's play Pac-Man</button></a>
+                              <br>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="table-cell3">
+                    <th><h2>2048</h2>
+                        <p>2048 is a single-player sliding tile puzzle video game written by Italian web developer Gabriele Cirulli and published on GitHub</p>
+                    </th>
+                    <td>
+                        <div class="row">
+                            <div class="col-xs-12 col-md-12 col-sm-12">
+                              <br>
+                                <a href="https://play2048.co/"><button class="button custom-button">Let's add those numbers</button></a>
+                              <br>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="table-cell1">
+                    <th><h2>Tic-tac-toe</h2>
+                        <p>Tic-tac-toe, noughts and crosses, or Xs and Os is a paper-and-pencil game for two players who take turns marking the spaces in a three-by-three grid with X or O. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row is the winner.</p>
+                    </th>
+                    <td>
+                        <div class="row">
+                            <div class="col-xs-12 col-md-12 col-sm-12">
+                              <br>
+                                <a href="https://playtictactoe.org/"><button class="button custom-button">Let's cross off the opponent</button></a>
+                              <br>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="table-cell2">
+                    <th><h2>Word-master</h2>
+                        <p>You already know this game. Have fun.</p>
+                    </th>
+                    <td>
+                        <div class="row">
+                            <div class="col-xs-12 col-md-12 col-sm-12">
+                              <br>
+                                <a href="https://dspinellis.github.io/word-master/"><button class="button custom-button">Let's find the Word</button></a>
+                              <br>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="table-cell3">
+                    <th><h2>Quick, Draw!</h2>
+                        <p>Quick, Draw! is an online game developed by Google that challenges players to draw a picture of an object or idea and then uses a neural network artificial intelligence to guess what the drawings represent. The AI learns from each drawing, improving its ability to guess correctly in the future.</p>
+                    </th>
+                    <td>
+                        <div class="row">
+                            <div class="col-xs-12 col-md-12 col-sm-12">
+                              <br>
+                                <a href="https://quickdraw.withgoogle.com/"><button class="button custom-button">Let's draw</button></a>
+                              <br>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+        <footer class="footer-grad">
+            <p>&copy; Merry Christmas <br> 2022</p>
+        </footer>    
+    </body>
+</html>
